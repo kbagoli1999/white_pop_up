@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="text-align:center">
+
+    <h2>Popup</h2>
+
+    <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+        <div class="popuptext" id="myPopup">
+            <p id="michlebi">Michlebi's Accuracy - NA <span id="inProgress"> In Progress</span></p>
+            <p>Word Problems with compartitive scenario</p>
+            <hr />
+            <table id="customers">
+                <tr>
+                    <th>Playable</th>
+                    <th>Accuracy</th>
+                    <th>Star</th>
+                </tr>
+                <tr>
+                    <td>Add the Numbers - I</td>
+                    <td>10/12</td>
+                    <td><img src="images/start_icon.jpg" alt="" style="width:25px;height:auto">
+                        <img src="images/start_icon.jpg" alt="" style="width:25px; height:auto">
+                        <img src="images/start_icon.jpg" alt="" style="width:25px; height:auto">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Add the Numbers - II</td>
+                    <td>9/12</td>
+                    <td><img src="images/start_icon.jpg" alt="" style="width:25px; height:auto">
+                        <img src="images/start_icon.jpg" alt="" style="width:25px; height:auto">
+                        <img src="images/white_star.jfif" alt="" style="width:25px; height:auto">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Missing Numbers</td>
+                    <td>0/12</td>
+                    <td><img src="images/start_icon.jpg" alt="" style="width:25px; height:auto">
+                        <img src="images/white_star.jfif" alt="" style="width:25px; height:auto">
+                        <img src="images/white_star.jfif" alt="" style="width:25px; height:auto">
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
